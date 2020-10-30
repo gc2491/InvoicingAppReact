@@ -1,0 +1,109 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edf4ff;
+  font-family: Cambria, Cochin, Georgia, "Times", "Times New Roman", serif;
+  font-size: 1.2em;
+  min-height: 100vh;
+}
+
+
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", */
+  /*   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", */
+  /*   sans-serif; */
+
+.pageWidth {
+  width: 70vw;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pageWidth {
+    width: 100vw;
+  padding: 0.5rem;
+  }
+  .modal-dialog {
+    max-width: 90%;
+    margin: 1.75rem auto;
+  }
+}
+
+body.modal-open {
+  padding-right: 0px !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.form-control:focus {
+  border-color: #28457a;
+  box-shadow: 0 0 0 0.2rem #28457a;
+}
+
+.noShadow:focus {
+  box-shadow: none;
+}
+
+li.page-item.active > span {
+  background-color: #28457a !important;
+  border-color: #28457a !important;
+}
+
+li > a.page-link {
+  color: #28457a;
+}
+
+li > a.page-link:focus {
+  box-shadow: 0 0 0 0.2rem #28457a;
+}
+
+div.form-group.col-md-1,
+div.form-group.col-md-2,
+div.form-group.col-md-3,
+div.form-group.col-md-4 {
+  margin-bottom: 10px;
+}
+
+@keyframes invoiceTabExpand {
+  from {
+    height: 0;
+  }
+  to {
+    height: fit-content;
+  }
+}
+
+@keyframes invoiceTabCollapse {
+  from {
+    height: fit-content;
+  }
+  to {
+    height: 0;
+  }
+}
+
+.invoiceTabExpand {
+  height: fit-content;
+  transition: height 1s;
+  overflow: hidden;
+}
+
+.invoiceTabAnimation {
+  transition: height 10s ease-in-out;
+  overflow: hidden;
+}
